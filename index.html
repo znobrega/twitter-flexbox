@@ -10,7 +10,7 @@
   <body>
     <header id="main-header">
       <nav>
-        <div class="content">
+        <div class="container">
           <div id="left-items">
             <ul>
               <li>
@@ -40,10 +40,10 @@
       <h1>Hello!</h1>
     </div>
     <div id="info-bar">
-      <div class="content">
+      <div class="container">
         <ul>
           <li>Tweets<strong>4931</strong></li>
-          <li>Followings<strong>231</strong></li>
+          <li class="active">Followings<strong>231</strong></li>
           <li>Followers<strong>867</strong></li>
           <li>Favorites<strong>169</strong></li>
           <li>Lists<strong>2</strong></li>
@@ -51,8 +51,71 @@
         </ul>
         <div id="mini-menu">
           <button>Follow</button>
-          <img src="./images/more.svg" />
+          <img src="./images/more.svg" alt="Button" />
         </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <aside id="profile">
+          <img id="avatar" src="./images/avatar.png" alt="Avatar" />
+          <h1>Carlos Nóbrega</h1>
+          <em>@carl</em>
+          <p>Computer Science student</p>
+          <ul>
+            <li>
+              <img src="./images/place.svg" alt="Place" />
+              <span>João Pessoa, Brasil</span>
+            </li>
+            <li>
+              <img src="./images/url.svg" alt="Url" />
+              <a href="www.github.com/znnobrega">github.com/znobrega</a>
+            </li>
+            <li>
+              <img src="./images/joined.svg" alt="Place" />
+              <span>Joined August, 2019</span>
+            </li>
+            <li>
+              <img src="./images/born.svg" alt="Born" />
+              <span>Born the 3th of January 1998</span>
+            </li>
+          </ul>
+          <div>
+            <img src="./images/followers.svg" alt="followes" />
+            <a href="#">83 followers that you know</a>
+            <div id="followers">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img src="./images/images.svg" alt="images" />
+            <a href="#">231 Photos and videos</a>
+            <div id="images">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <section id="timeline">Timeline</section>
+        <aside id="recommend">Rocommend</aside>
       </div>
     </div>
   </body>
