@@ -97,8 +97,69 @@ header#main-header nav #right-items button {
 
 }
 
-header#main-header #header-background {
+ #banner {
   height: 300px;
   width: 100%;
-  background: cyan;
+  background: #3bb9e3;
+  color: #FFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#info-bar {
+  width: 100%;
+  background: #FFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, .25);
+}
+
+div#info-bar div {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 270px;
+}
+
+div#info-bar div ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  
+}
+
+div#info-bar div ul li {
+  font-weight: bold;
+  font-size: 12px;
+  color: #667580;
+  padding: 0 15px; 
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+div#info-bar div ul li strong{
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+div#info-bar div #mini-menu {
+  display: flex;
+}
+
+div#info-bar div #mini-menu button{
+  border: 1px solid #3bb9e3;
+  border-radius: 16px;
+  background: none;
+  height: 34px;
+  width: 90px;
+  font-weight: bold;
+  color: #3bb9e3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
