@@ -198,15 +198,16 @@ div.main-content div.container {
 div.main-content div aside#profile {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 260px;
 }
 
 div.main-content div aside#profile img#avatar {
   border-radius: 50%;
   border: 5px solid #fff;
-  width: 150px;
+  width: 200px;
+  height: 200px;
   margin-top: -130px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 div.main-content div aside#profile a {
@@ -214,12 +215,13 @@ div.main-content div aside#profile a {
 }
 
 div.main-content div aside#profile h1 {
-  font-size: 20px;
+  font-size: 21px;
+  color: #1f2226;
 }
 div.main-content div aside#profile em {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 14px;
-  color: #667580;
+  color: #53626c;
 }
 
 div.main-content div aside#profile p {
@@ -228,24 +230,36 @@ div.main-content div aside#profile p {
   margin-bottom: 20px;
 }
 
+  div.main-content div aside#profile div strong {
+  font-weight: normal;
+  display: flex;
+  align-content: center;
+}
 
-div.main-content div aside#profile ul li{
+div.main-content div aside#profile div strong a {
+  color: #eBB9E3;
+  margin-left: 5px;
+}
+
+div.main-content div aside#profile ul {
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+div.main-content div aside#profile ul li {
+  font-size: 14px;
+
   list-style-type: none;
-  color: #667580;
+  color: #667786;
   margin-bottom: 9px;
 
   display: flex;
   align-items: center;
 }
 
-div.main-content div aside#profile ul  {
-  margin-bottom: 12px;
-}
-
-
 div.main-content div aside#profile ul li img {
   width: 15px;
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 div.main-content div aside#profile div div#followers {
@@ -255,19 +269,19 @@ div.main-content div aside#profile div div#followers {
 div.main-content div aside#profile div div#followers ul {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 div.main-content div aside#profile div div#followers ul li {
   margin-bottom: 3px;
   margin-right: 5px;
-  width: 43px;
-  height: 43px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  background: rgba(100, 100, 100, 0.25);
-}
-
-div.main-content div aside#profile div div#images {
-  width: 250px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex: 1 0 auto;
+  background: #D0D5D9;
 }
 
 div.main-content div aside#profile div div#images ul {
@@ -276,10 +290,21 @@ div.main-content div aside#profile div div#images ul {
 }
 
 div.main-content div aside#profile div div#images ul li {
-  width: 70px;
-  height: 70px;
-  margin-right: 2px;
-  margin-bottom: 3px;
-  background: rgba(100, 100, 100, 0.25);
+  width: 80px;
+  height: 80px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex: 1 0 auto;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background: #D0D5D9;
+}
+
+div.main-content div section {
+  flex-grow: 1;
+}
+
+div.main-content div aside.widgets {
+  width: 290px;
 }
 
