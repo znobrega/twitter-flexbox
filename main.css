@@ -300,11 +300,113 @@ div.main-content div aside#profile div div#images ul li {
   background: #D0D5D9;
 }
 
-div.main-content div section {
-  flex-grow: 1;
+div.main-content div .timeline {
+  flex-grow: 1; 
+  background: #fff;
+  margin: 10px 20px; 
 }
 
 div.main-content div aside.widgets {
   width: 290px;
 }
 
+div.main-content div aside.widgets .widget {
+  background: #fff;
+  padding: 15px;
+  margin-top: 10px;
+  
+}
+
+div.main-content div aside.widgets .widget .title {
+  display:flex;
+  align-items: baseline;
+}
+
+div.main-content div aside.widgets .widget .title strong {
+  font-size: 18px;
+  color: #1f2226;
+}
+
+div.main-content div aside.widgets .widget .title a {
+  color: #eBB9E3;
+  font-size: 12px;
+  text-decoration: none;
+  position: relative;
+  padding-left: 15px;
+}
+
+div.main-content div aside.widgets .widget .title a::before {
+  content:'';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #222;
+  left: 4px;
+  top: 6px;
+  margin-right: 5px;
+  margin-left: 5px;
+  position: absolute;
+}
+
+div.main-content div aside.widgets .follow ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+div.main-content div aside.widgets .follow ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #3bb9e3;
+  padding-bottom: 10px; 
+  margin-bottom: 10px; 
+}
+
+div.main-content div aside.widgets .follow ul li .profile {
+  display: flex;
+  align-items: center;
+}
+
+div.main-content div aside.widgets .follow ul li .profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.main-content div aside.widgets .follow ul li .profile #info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.main-content div aside.widgets .follow ul li .profile #info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+div.main-content div aside.widgets .follow ul li .profile #info strong span {
+  font-weight: normal;
+  color: #9a9a9a;
+}
+
+div.main-content div aside.widgets .follow ul li .profile #info button {
+  margin-top: 4px;
+  height: 27px;
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #3bb9e3;
+  color: #3bb9e3;
+  border-radius: 16px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  cursor: pointer;
+}
+
+div.main-content div aside.widgets .follow  ul li > a {
+  color: #ccd6dd;
+  text-decoration: none;
+  font-size: 12px;
+}
