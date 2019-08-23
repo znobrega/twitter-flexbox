@@ -237,7 +237,7 @@ div.main-content div aside#profile p {
 }
 
 div.main-content div aside#profile div strong a {
-  color: #eBB9E3;
+  color: #3bb9e3;
   margin-left: 5px;
 }
 
@@ -254,7 +254,13 @@ div.main-content div aside#profile ul li {
   margin-bottom: 9px;
 
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+}
+
+div.main-content div aside#profile ul li span {
+  display: flex;
+  align-self: center;
 }
 
 div.main-content div aside#profile ul li img {
@@ -306,6 +312,25 @@ div.main-content div .timeline {
   margin: 10px 20px; 
 }
 
+div.main-content div .timeline .nav-timeline {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+div.main-content div .timeline .nav-timeline ul {
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+div.main-content div .timeline .nav-timeline ul li a {
+  text-decoration: none;
+  color: #3bb9e3;
+  font-weight: bold;
+}
+
 div.main-content div aside.widgets {
   width: 290px;
 }
@@ -328,24 +353,10 @@ div.main-content div aside.widgets .widget .title strong {
 }
 
 div.main-content div aside.widgets .widget .title a {
-  color: #eBB9E3;
+  color: #3bb9e3;
   font-size: 12px;
   text-decoration: none;
-  position: relative;
-  padding-left: 15px;
-}
-
-div.main-content div aside.widgets .widget .title a::before {
-  content:'';
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  background: #222;
-  left: 4px;
-  top: 6px;
-  margin-right: 5px;
-  margin-left: 5px;
-  position: absolute;
+  margin: 6px 0 5px 0;
 }
 
 div.main-content div aside.widgets .follow ul {
@@ -353,10 +364,14 @@ div.main-content div aside.widgets .follow ul {
   margin-top: 10px;
 }
 
+div.main-content div aside.widgets .follow .title {
+  display: flex;
+  flex-direction: column;
+}
+
 div.main-content div aside.widgets .follow ul li {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #3bb9e3;
   padding-bottom: 10px; 
   margin-bottom: 10px; 
 }
