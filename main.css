@@ -124,7 +124,7 @@ div#info-bar div.container {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 285px;
+  padding-left:290px;
 }
 
 div#info-bar div ul {
@@ -148,6 +148,15 @@ div#info-bar div ul li {
 }
 
 div#info-bar div ul li.active::after {
+  content: "";
+  height: 2px;
+  background: #3bb9e3;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+div#info-bar div ul li:hover::after {
   content: "";
   height: 2px;
   background: #3bb9e3;
@@ -254,7 +263,6 @@ div.main-content div aside#profile ul li {
   margin-bottom: 9px;
 
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -309,26 +317,103 @@ div.main-content div aside#profile div div#images ul li {
 div.main-content div .timeline {
   flex-grow: 1; 
   background: #fff;
-  margin: 10px 20px; 
+  margin: 10px 10px; 
+}
+
+div.main-content div .timeline nav {
+  border-bottom: 1px solid #e6ecf0; 
 }
 
 div.main-content div .timeline .nav-timeline {
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
 }
 
 div.main-content div .timeline .nav-timeline ul {
-  display: flex;
-  justify-content: space-around;
-  justify-content: space-between;
   list-style-type: none;
+  display: flex;
+}
+
+div.main-content div .timeline .nav-timeline ul li {
+  margin: 0 12px 0 12px; 
 }
 
 div.main-content div .timeline .nav-timeline ul li a {
+  font-size: 18px;
   text-decoration: none;
   color: #3bb9e3;
   font-weight: bold;
+}
+
+div.main-content div .timeline .nav-timeline ul li a.active {
+  color: #1f2226;
+}
+
+div.main-content div .timeline ul.content-timeline {
+  list-style-type: none;
+}
+
+div.main-content div .timeline ul.content-timeline > li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e6ecf0; 
+  display: flex;
+}
+
+div.main-content div .timeline ul.content-timeline li div.tweet {
+  margin-left: 10px; 
+}
+
+div.main-content div .timeline ul.content-timeline li .user-info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+div.main-content div .timeline ul.content-timeline li .user-info span {
+  font-size: 13px;
+  color: #7b8b9a;
+}
+
+
+div.main-content div .timeline .content-timeline #tweet-avatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+
+div.main-content div .timeline ul.content-timeline li div.tweet p {
+  font-size: 14px;
+  color: #1f2326;
+  margin-top: 5px;
+}
+
+div.main-content div .timeline .content-timeline div.menu-down ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.main-content div .timeline .content-timeline div.menu-down ul li {
+  border-bottom: none;
+  color: #667580;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: flex-end;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+div.main-content div .timeline .content-timeline div.menu-down ul li:first-child {
+  margin-left: 0;
+}
+
+div.main-content div .timeline .content-timeline div.menu-down ul li img {
+  margin-right: 5px;
 }
 
 div.main-content div aside.widgets {
@@ -339,12 +424,11 @@ div.main-content div aside.widgets .widget {
   background: #fff;
   padding: 15px;
   margin-top: 10px;
-  
 }
 
 div.main-content div aside.widgets .widget .title {
   display:flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 div.main-content div aside.widgets .widget .title strong {
